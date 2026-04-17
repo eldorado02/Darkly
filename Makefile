@@ -1,7 +1,9 @@
 IP_ADDRESS = 192.168.88.219
 
 build:
-	if [ ! -d .venv ] ; then python3 -m venv .venv ; fi
+	@if [ ! -d .venv ] ; then python3 -m venv .venv ; fi
+
+install: build
 	pip install --upgrade pip
 	pip install -r requirements.txt
 

