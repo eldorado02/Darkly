@@ -1,0 +1,4 @@
+dans le /robots il ya deux path /.hidden et /whatever 
+et dans le /whatever il y a htpasswd le root et le login de /admin
+et le password et une hash et on le decrypt dans crack station et on qwerty123@ et on on entre ca 
+dans le login page de /admin et on a le flag
