@@ -1,0 +1,6 @@
+cookie have a hash wich is mda5 hash and we decrypt it with crack station
+68934a3e9455fa72420237eb05902327 ==> false
+and i have an idea if we put a hash of true
+true ==> b326b5062b2f0e69046810717534cb09
+
+and it give me the flag in the alert
