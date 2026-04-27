@@ -10,7 +10,6 @@ install: build
 clean:
 	rm -rf $$( find . -path "./.venv" -prune -type d -name __pycache__ )
 
-
 robots:
 	python robots/request.py ${IP_ADDRESS}
 

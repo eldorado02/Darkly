@@ -6,7 +6,7 @@ import io
 import urllib.parse as parse
 
 
-def parse_line_of_href(line: str, n) -> str:
+def parse_line_of_href(line: str, n: int) -> str:
     """Clean up all href and quote"""
     first_comma = line.find('"', n)
     second_comma = line.find('"', first_comma + 1)
@@ -26,7 +26,7 @@ def filter_all_url(response: str) -> list[str]:
     return (all_href)
 
 
-def get_flag(base_url) -> str:
+def get_flag(base_url: str) -> str:
     """Get flag recursively until found in README in all href"""
     r = requests.get(base_url)
     all_href = filter_all_url(r.text)
