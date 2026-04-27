@@ -9,8 +9,9 @@ install: build
 
 clean:
 	rm -rf $$( find . -path "./.venv" -prune -type d -name __pycache__ )
+	rm -rf .venv
 
 robots:
-	python 04-robots/Resources/request.py ${IP_ADDRESS}
+	python 04-Sensitive_Data_Exposure/Resources/request.py ${IP_ADDRESS}
 
 .PHONY : clean fclean robots

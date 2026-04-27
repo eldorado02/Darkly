@@ -26,20 +26,20 @@ def filter_all_url(response: str) -> list[str]:
     return (all_href)
 
 
-def get_flag(base_url: str) -> str:
+def get_flag(base_url: str, session: requests.Session) -> str:
     """Get flag recursively until found in README in all href"""
-    r = requests.get(base_url)
+    r = session.get(base_url)
     all_href = filter_all_url(r.text)
     for href in all_href:
         if href == "README":
-            resp = requests.get(f"{base_url}{href}")
+            resp = session.get(f"{base_url}{href}")
             if resp.text.find("your flag") != -1:
                 print(resp.text, end="")
                 print(base_url)
                 sys.exit(0)
             return (resp.text)
         else:
-            get_flag(f"{base_url}{href}")
+            get_flag(f"{base_url}{href}", session)
     return ""
 
 def main():
@@ -47,7 +47,8 @@ def main():
     assert len(sys.argv) > 1, "Parametere must be address or url"
     
     address = sys.argv[1]
-    all_href = get_flag(f"http://{address}:80/.hidden/")
+    session = requests.Session()
+    all_href = get_flag(f"http://{address}:80/.hidden/", session)
 
 if __name__ == "__main__":
     main()
