@@ -1,4 +1,4 @@
-# 02 - SQL Injection
+# 06 - SQL Injection
 
 ## Walkthrough
 

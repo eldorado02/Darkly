@@ -1,4 +1,4 @@
-# 04 - XSS Stored
+# 09 - XSS Stored
 
 ## Walkthrough
 

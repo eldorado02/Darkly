@@ -1,4 +1,4 @@
-# 11 - Client-Side Validation Bypass
+# 10 - Client-Side Validation Bypass
 
 ## Walkthrough
 

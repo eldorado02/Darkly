@@ -1,4 +1,4 @@
-# 03 - Brute Force
+# 07 - Brute Force
 
 ## Walkthrough
 

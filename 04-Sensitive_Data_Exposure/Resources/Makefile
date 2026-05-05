@@ -12,6 +12,6 @@ clean:
 	rm -rf .venv
 
 robots:
-	python 04-Sensitive_Data_Exposure/Resources/request.py ${IP_ADDRESS}
+	python request.py ${IP_ADDRESS}
 
 .PHONY : clean fclean robots
